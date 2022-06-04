@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e2c771c7-29ee-4144-9346-5cf39f078c6c": {
+      "ProjectGuid": "e2c771c7-29ee-4144-9346-5cf39f078c6c",
+      "DisplayName": "IssueTracker",
+      "ColorIndex": 0
+    },
+    "995c354a-d319-4516-9fe5-74e9f051dcdd": {
+      "ProjectGuid": "995c354a-d319-4516-9fe5-74e9f051dcdd",
+      "DisplayName": "BLL",
+      "ColorIndex": 1
+    },
+    "1e829692-440f-4fa0-9880-29c633be0ead": {
+      "ProjectGuid": "1e829692-440f-4fa0-9880-29c633be0ead",
+      "DisplayName": "BLL",
+      "ColorIndex": 2
+    },
+    "db1f45a7-ba02-4a93-905c-8c7543f0a3d7": {
+      "ProjectGuid": "db1f45a7-ba02-4a93-905c-8c7543f0a3d7",
+      "DisplayName": "DAL",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
