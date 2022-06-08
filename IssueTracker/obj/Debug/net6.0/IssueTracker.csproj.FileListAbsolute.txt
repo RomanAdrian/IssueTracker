@@ -14,6 +14,7 @@ C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\System.Web.Hel
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Repos\Issue Tracker\IssueTracker\IssueTracker\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll

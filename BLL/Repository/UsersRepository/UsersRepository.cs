@@ -2,10 +2,7 @@
 using AutoMapper.QueryableExtensions;
 using BLL.DTO;
 using DAL.AppDbContext;
-using DAL.Entities;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace BLL.Repository.UsersRepository
 {

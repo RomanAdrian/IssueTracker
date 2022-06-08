@@ -5,15 +5,18 @@ using System.Security.Cryptography;
 using System.Text;
 using BLL.DTO;
 using Microsoft.EntityFrameworkCore;
+using BLL.Services;
 
 namespace IssueTracker.Controllers
 {
     public class AccountController : BaseApiController
     {
         private readonly IssueTrackerDbContext _context;
-        public AccountController(IssueTrackerDbContext context)
+        private readonly ITokenService _tokenService;
+        public AccountController(IssueTrackerDbContext context, ITokenService tokenService)
         {
             _context = context;
+            _tokenService = tokenService;
         }
 
         [HttpPost("register")]
@@ -38,6 +41,7 @@ namespace IssueTracker.Controllers
             await _context.SaveChangesAsync();
             return new UserDTO
             {
+                Token = _tokenService.CreateToken(user),
                 Username = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
@@ -49,7 +53,7 @@ namespace IssueTracker.Controllers
 
         [HttpPost("login")]
 
-        public async Task<ActionResult<User>> Login(LoginDTO loginDTO)
+        public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
         {
             var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == loginDTO.Username);
 
@@ -66,7 +70,11 @@ namespace IssueTracker.Controllers
                     return Unauthorized("Password is not valid!");
                 }
             }
-            return user;
+            return new UserDTO
+            {
+                Username = user.UserName,
+                Token = _tokenService.CreateToken(user)
+            };
         }
 
         private async Task<bool> UserExists(string username)
